@@ -1,0 +1,16 @@
+<template>
+    <div class="description"><slot></slot></div>
+    <p>
+        <a class="slds-text-link" href={sourceURL} target="source" >View Source</a>
+    </p>
+</template>
+
+<!--
+    //A slot is a placeholder for markup that a parent component passes into a component's body.
+    //source is the public variable defined in the controller of
+    //lwcLinkToURL component
+    <c-lwc-Link-To-URL source="lwc/helloWorld" slot="footer">
+        calling the component lwcLinkToURL.html from another component and its page will be loaded
+    </c-lwc-Link-To-URL>
+
+-->
